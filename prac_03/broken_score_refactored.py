@@ -1,33 +1,25 @@
-"""
-CP1404/CP5632 - Practical
-Broken program to determine score status
-"""
-
-# TODO: Fix this!
-"Set an upper and lower limit"
-upper_boundary = 100
-lower_boundary = 0
-"receive a score between 0 and 100 inclusive from the user"
-score = float(input("Enter score: "))
+def main():
+    """Convert Score to grade"""
+    # Receive a score between 0 and 100 inclusive from the user
+    score = float(input("Enter score: "))
+    # Print grade
+    print(score_to_grade(score))
 
 
-if lower_boundary <= score <= upper_boundary:
-    if score >= 90:
-        print("Excellent")
+def score_to_grade(score):
+    """Error check and return grade as string"""
+    # Set an upper and lower limit
+    UPPER_BOUNDARY = 100
+    LOWER_BOUNDARY = 0
+    # Check which grade was received
+    if UPPER_BOUNDARY < score or score < LOWER_BOUNDARY:
+        return "invalid score"
+    elif 100 >= score >= 90:
+        return "Excellent"
     elif score >= 50:
-        print("Pass")
+        return "Pass"
     else:
-        print("Bad")
-else:
-    print("Invalid score")
+        return "Bad"
 
-"NO ERROR CHECKING WAS IMPLEMENTED TO ENSURE NO STRINGS WERE ENTERED (OUTSIDE SCOPE OF ASSESSMENT?)"
 
-'''if 90 <= score <= 100:
-    print("Excellent")
-elif score >= 50:
-    print("Pass")
-elif score < 50:
-    print("Bad")
-else:
-    print("Invalid score")'''
+main()
