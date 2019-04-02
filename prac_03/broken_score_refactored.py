@@ -10,6 +10,7 @@ lower_boundary = 0
 "receive a score between 0 and 100 inclusive from the user"
 score = float(input("Enter score: "))
 
+
 if lower_boundary <= score <= upper_boundary:
     if score >= 90:
         print("Excellent")
