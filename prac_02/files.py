@@ -21,10 +21,10 @@ print("Your name is: ", name_from_text)
 # Read from the text file containing 2 numbers
 numbers_file = open("numbers.txt", 'r')
 # Assign each number to a constant
-FIRST_NUMBER = numbers_file.readline()
-SECOND_NUMBER = numbers_file.readline()
+first_number = int(numbers_file.readline())
+second_number = int(numbers_file.readline())
 # Convert the string numbers into integer numbers and add them
-total_number = int(FIRST_NUMBER) + int(SECOND_NUMBER)
+total_number = first_number + second_number
 # Print the total number
 print(total_number)
 # Close the numbers file
