@@ -1,4 +1,4 @@
-"""Convert string to words + word count"""
+"""Convert string, to words + word count"""
 
 user_string = str(input("Text: ").lower())
 user_words = user_string.split(" ")
