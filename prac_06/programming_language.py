@@ -1,3 +1,6 @@
+"""Programming language class"""
+
+
 class ProgrammingLanguage:
     def __init__(self, program_name="", program_typing="", program_reflection=False, program_year=0):
         self.program_name = program_name
