@@ -1,4 +1,4 @@
-"""Client code to use the guitar class"""
+"""Client code to test the guitar class"""
 
 from prac_06.guitar import Guitar
 
