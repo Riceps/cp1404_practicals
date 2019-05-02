@@ -17,6 +17,7 @@ def main():
         print("{} ({}) : ${} added.".format(guitar_name, guitar_year, guitar_cost))
         guitar_name = str(input("Name: "))
 
+    # How do i use the class ???
     i = 1
     for guitar in guitars:
         print("Guitar {}: {} ({}), worth $ {}".format(i, guitar[0], guitar[1], guitar[2]))
