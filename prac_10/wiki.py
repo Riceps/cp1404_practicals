@@ -1,4 +1,4 @@
-""""""
+"""Wikipedia summary provider"""
 import wikipedia
 
 wiki_search = input("Enter your wiki search: ")
