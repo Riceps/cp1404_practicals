@@ -50,6 +50,19 @@ def run_tests():
     assert test_car.odometer == 10
 
 
+def fix_punctuation(unpunctuated):
+    """
+    >>> fix_punctuation('hello')
+    'Hello.'
+    :return:
+    """
+    punctuated = unpunctuated.capitalize()
+    if punctuated[-1] != '.':
+        punctuated += '.'
+    return punctuated
+
+
+
 run_tests()
 
 # TODO: 3. Uncomment the following line and run the doctests
